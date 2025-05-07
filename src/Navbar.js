@@ -11,6 +11,7 @@ const Navbar = ({ onSignInClick }) => {
   
         <div className="search-auth">
           <input type="text" placeholder="Search..." className="search-input" />
+          <button className="signin-btn" onClick={onSignInClick}>Log In</button>
           <button className="signin-btn" onClick={onSignInClick}>Sign In</button>
         </div>
       </nav>

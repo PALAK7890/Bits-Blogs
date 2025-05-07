@@ -6,7 +6,7 @@ const SignInPage = () => {
   const [password, setPassword] = useState('');
 
   const handleSignIn = (e) => {
-    e.preventDefault(); // prevent form reload
+    e.preventDefault(); 
     console.log('Email:', email);
     console.log('Password:', password);
   };
@@ -19,7 +19,7 @@ const SignInPage = () => {
           src="https://i.pinimg.com/736x/37/57/5a/37575a213755cad83bd408908623ba22.jpg"
           alt="logo"
         />
-        <h1 className="welcome-text">Hi, Please Login</h1>
+        <h1 className="welcome-text">Hi, Please Sign in</h1>
 
         <div className="signin-box">
           <form onSubmit={handleSignIn}>
