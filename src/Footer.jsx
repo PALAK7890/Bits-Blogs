@@ -1,11 +1,12 @@
 import React from 'react'
 
 const Footer = () => {
-    return ( 
-        <div classname ='Footer'>
+    return ( <>
+        <div className ='Footer'>
+            <div className="Footer-top">
 
             <div className='sb-footer-links'>
-                <h4>Company</h4>
+                <h4>Bits & Blogs</h4>
                 <a href='/About'>
                 <p>About</p>
                 </a>
@@ -21,6 +22,14 @@ const Footer = () => {
 
             </div>
 
+            <div className='Sub-Footer'>
+                <a href='/Terms'>Terms and Contidions</a>
+                <a href='/Privacy'>Privacy</a>
+                <a href='/Security'>Security</a>
+                <a href='/Cookie'>Cookiesss</a>
+            </div>
+
+
             <div className='Footer-social-links'>
                 <h4>Coming soon On..</h4>
                 <div className='SocialMedia'>
@@ -30,18 +39,19 @@ const Footer = () => {
                     <p><img src='https://i.pinimg.com/736x/63/e6/1a/63e61a8f4a158c31565a57999baae7c4.jpg' alt=''/></p>
                 </div>
             </div>
+            
+        </div>
+            
+            
 
             <div className='Footer-copyright'>
                 <p> @{new Date().getFullYear() }CodeInn. All rights Reserved </p>
             </div>
+</div>
+            
+        
 
-            <div className='Sub-Footer'>
-                <a href='/Terms'>Terms and Contidions</a>
-                <a href='/Privacy'>Privacy</a>
-                <a href='/Security'>Security</a>
-                <a href='/Cookie'>Cookiesss</a>
-            </div>
-        </div>
+        </>
      );
 }
  
