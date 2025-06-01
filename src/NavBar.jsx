@@ -1,9 +1,10 @@
 import React from 'react'
+import Logo from './Logo.png'
 const Navbar = () => {
     return ( <>
     <div className="navBar">
         
-        <img src='https://i.pinimg.com/736x/73/72/c5/7372c5ecd6dde21ffa04bba1c33d1729.jpg' alt=' ' className='Logo'/>
+        <img src={Logo} alt=' ' className='Logo'/>
 
         <ul>
             <li>Home</li>
@@ -20,7 +21,7 @@ const Navbar = () => {
 
 
     </div>
-    </> );
+    </> ) ;
 }
  
 export default Navbar;
