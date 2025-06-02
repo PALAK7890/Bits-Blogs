@@ -1,4 +1,4 @@
-import React,{use, useState} from 'react'
+import React,{ useState} from 'react'
 const Login = () => {
     const[isLogin,setIsLogin]=useState(true)
 
@@ -18,8 +18,9 @@ const Login = () => {
         <h2>Login</h2>
         <input type='email' placeholder='Email..'/>
         <input type='password' placeholder='Password..'/>
-        <a href='#'>Forgot Password?</a>
-        <p>New member? <a href='#' onClick={()=>setIsLogin(false)}>Sign In Now</a></p>
+        <a href='About'>Forgot Password?</a>
+        <p>New member? <a href='About' onClick={()=>setIsLogin(false)}>Sign In Now</a></p>
+        <button style={{alignItems:'center', justifyContent:'center'}}>Login</button>
 
     </div>
     </> : <>

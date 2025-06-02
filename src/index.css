@@ -71,7 +71,7 @@
     cursor: pointer;
 }
 .search-icon{
-    width: 20px;
+    width: 30px;
     cursor: pointer;
 }
 .search-box{
@@ -211,10 +211,14 @@
 .Login-Signin {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(135deg, #fce3f0, #ffe9fb);
+  background-image: url('https://i.pinimg.com/736x/e0/4c/2c/e04c2c64127462fad5a5a4243648f3d2.jpg');
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -234,7 +238,9 @@
 .Form-toggle {
   display: flex;
   justify-content: space-around;
+  
   margin-bottom: 20px;
+
 }
 
 .Form-toggle button {
@@ -253,19 +259,22 @@
 }
 
 .Form-toggle .active {
-  background-color: #b306a1;
+  background-color: #ef72b9;
   color: white;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  
+  width: 100%;
 }
 
 .form h2 {
   margin-bottom: 20px;
   text-align: center;
-  color: #b306a1;
+  color: black;
 }
 
 .form input {
@@ -282,18 +291,21 @@ form {
 }
 
 .form button {
+  display: flex;
+align-self: center; 
   padding: 10px;
-  background-color: #b306a1;
+  background-color: #ee6ca2;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
+
 }
 
 .form button:hover {
-  background-color: #93067f;
+  background-color: #e785d8;
 }
 
 .form a {
