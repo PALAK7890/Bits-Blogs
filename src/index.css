@@ -49,7 +49,14 @@
 }
 
 
+.container{
+   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 
+  
+}
 
  /* Navbar styling */
 
@@ -290,7 +297,20 @@
   border-color: #b306a1;
 }
 
-.form button {
+.lbutton  {
+  display: flex;
+align-self: center; 
+  padding: 10px;
+  background-color: #ee6ca2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+}
+.sbutton  {
   display: flex;
 align-self: center; 
   padding: 10px;
@@ -324,4 +344,221 @@ align-self: center;
   text-align: center;
   font-size: 14px;
   color: #555;
+}
+
+
+/* home page stylinggg */
+.home-container {
+  padding: 40px 5%;
+  background: #f9f3f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Create Blog Section */
+.create-blog {
+  text-align: center;
+  background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.create-blog h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.create-blog-button {
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-blog-button:hover {
+  background-color: #e55d9b;
+}
+
+/* Featured Blogs Section */
+.featured-blogs {
+  margin-top: 20px;
+}
+
+.featured-blogs h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #444;
+  text-align: center;
+}
+
+/* Blog Cards Grid */
+.featured-blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Each Blog Card */
+.grid {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.grid-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.grid h4 {
+  font-size: 20px;
+  margin: 15px;
+  color: #333;
+}
+
+.grid p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 15px 15px 15px;
+}
+
+.hlogin {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;               
+  margin-top: 10px;
+}
+
+/* creatblog */
+
+/* CreateBlog.css */
+
+.CreateBlog-container {
+  padding: 40px 20px;
+  background-color: #fff0f6;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CreateBlog-container h3 {
+  font-size: 2rem;
+  color: #b83280;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.write {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.write h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.write input[type='text'] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.write input[type='text']:focus {
+  border-color: #b83280;
+  outline: none;
+}
+
+.write textarea {
+  height: 200px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  transition: border 0.3s ease;
+}
+
+.write textarea:focus {
+  border-color: #b83280;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+   background-color: #b83280;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #9b2f6b;
+}
+
+
+/* congrate */
+
+.congrats-container {
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.congrats-container h2 {
+  font-size: 2rem;
+  color: #b83280;
+}
+
+.congrats-container p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #b83280;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #9b2f6b;
 }

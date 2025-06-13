@@ -3,8 +3,9 @@ import Logo from './Logo.png'
 const Navbar = () => {
     return ( <>
     <div className="navBar">
-        
-        <img src={Logo} alt=' ' className='Logo'/>
+
+        <img src={Logo} alt=' ' className='Logo'></img>
+      
 
         <ul>
             <li>Home</li>

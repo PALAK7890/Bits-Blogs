@@ -1,5 +1,5 @@
 import React,{ useState} from 'react'
-const Login = () => {
+const Login = ({ loginButton, signUpButton }) => {
     const[isLogin,setIsLogin]=useState(true)
 
 
@@ -20,7 +20,7 @@ const Login = () => {
         <input type='password' placeholder='Password..'/>
         <a href='About'>Forgot Password?</a>
         <p>New member? <a href='About' onClick={()=>setIsLogin(false)}>Sign In Now</a></p>
-        <button style={{alignItems:'center', justifyContent:'center'}}>Login</button>
+        {loginButton || <button className='lbutton'>Login</button>}
 
     </div>
     </> : <>
@@ -29,7 +29,7 @@ const Login = () => {
         <input type='email' placeholder='Email..'/>
         <input type='password' placeholder='Password..'/>
         <input type='password' placeholder=' Confirm Password..'/>
-        <button>Sign In</button>
+        {signUpButton || <button className='sbutton'>Sign in</button>}
      </div>
 
     </>}
