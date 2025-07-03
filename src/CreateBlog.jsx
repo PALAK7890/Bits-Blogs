@@ -1,6 +1,5 @@
 import React from 'react';
-import Navbar from './NavBar';
-import Footer from './Footer';
+
 import { useNavigate } from 'react-router-dom';
 
 export default function CreateBlog() {
@@ -13,7 +12,6 @@ export default function CreateBlog() {
 
   return (
     <div>
-      <Navbar />
 
       <div className='CreateBlog-container'>
         <h3>Make your Art Speak ✨</h3>
@@ -31,7 +29,7 @@ export default function CreateBlog() {
         </div>
       </div>
 
-      <Footer />
+     
     </div>
   );
 }

@@ -1,6 +1,10 @@
 import React,{ useState} from 'react'
+import { useNavigate } from 'react-router-dom';
+
 const Login = ({ loginButton, signUpButton }) => {
     const[isLogin,setIsLogin]=useState(true)
+
+    const navigate=useNavigate()
 
 
     return ( <>

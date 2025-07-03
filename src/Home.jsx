@@ -1,4 +1,5 @@
 import React,{useEffect,useState} from 'react'
+
 import Navbar from './NavBar'
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom';
@@ -13,17 +14,19 @@ export default function Home() {
 
     },[])
 
-
-  
+    const navigate=useNavigate()
 
   return (
     <div> 
-         <Navbar/>
+        
          <div className='home-container'>
             <div className='create-blog'>
                 <h2>Let's Create Your First Blog!</h2>
-                <button className='create-blog-button'>Create</button>
+                <button className='create-blog-button' onClick={()=>navigate('/Create')}>Create</button>
+                
                 <p style={{ marginTop: '20px' }}>Haven’t registered yet? Please log in or sign up below:</p>
+                <button className='create-blog-button' onClick={()=> navigate('/login-sign')} style={{padding:'10px',margin:'10px',width:'80px'}}>Login</button>
+                <button className='create-blog-button' onClick={()=> navigate('/login-sign')} style={{padding:'10px',margin:'10px',width:'80px'}}>Sign-in</button>
 
          
             </div>
@@ -42,7 +45,7 @@ export default function Home() {
             </div>
 
          </div>
-         <Footer/>
+         
     </div>
   )
 }

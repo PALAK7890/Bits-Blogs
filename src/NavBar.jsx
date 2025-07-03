@@ -1,6 +1,9 @@
 import React from 'react'
 import Logo from './Logo.png'
+import { useNavigate } from 'react-router-dom';
+
 const Navbar = () => {
+    const navigate=useNavigate()
     return ( <>
     <div className="navBar">
 
@@ -8,10 +11,11 @@ const Navbar = () => {
       
 
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Features</li>
-            <li>Blog</li>
+            <li><button onClick={()=>navigate('/home')} className='nbutton'>Home</button></li>
+            <li><button onClick={()=>navigate('/home')} className='nbutton'>About</button></li>
+            <li><button onClick={()=>navigate('/home')} className='nbutton'>Features</button></li>
+            <li><button onClick={()=>navigate('/home')} className='nbutton'>Blogs</button></li>
+            
         </ul>
         <div className='search-box'>
 
