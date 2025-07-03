@@ -5,11 +5,12 @@ import Navbar from './NavBar';
 import Footer from './Footer';
 import Login from './Login-SignIn';
 import Home from './Home';
+import About from './About';
 import Congrats from './Congrats';
 
 function App() {
   return (
-    <Router> {/* ✅ Wrap everything inside Router */}
+    <Router> 
       <Navbar />
       <div className='routes'>
         <Routes>
@@ -18,6 +19,7 @@ function App() {
           <Route path="/create" element={<CreateBlog />} />
           <Route path="/login-sign" element={<Login />} />
           <Route path="/home" element={<Home />} />
+          <Route path='/about' element={<About/>}/>
         </Routes>
       </div>
       <Footer />

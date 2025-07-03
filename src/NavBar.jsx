@@ -12,7 +12,7 @@ const Navbar = () => {
 
         <ul>
             <li><button onClick={()=>navigate('/home')} className='nbutton'>Home</button></li>
-            <li><button onClick={()=>navigate('/home')} className='nbutton'>About</button></li>
+            <li><button onClick={()=>navigate('/about')} className='nbutton'>About</button></li>
             <li><button onClick={()=>navigate('/home')} className='nbutton'>Features</button></li>
             <li><button onClick={()=>navigate('/home')} className='nbutton'>Blogs</button></li>
             

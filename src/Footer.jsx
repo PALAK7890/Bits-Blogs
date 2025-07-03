@@ -6,7 +6,8 @@ const Footer = () => {
             <div className="Footer-top">
 
             <div className='sb-footer-links'>
-                <h4>Bits & Blogs</h4>
+       
+                <h3>Quick Links!</h3>
                 <a href='/About'>
                 <p>About</p>
                 </a>
