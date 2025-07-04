@@ -7,6 +7,7 @@ import Login from './Login-SignIn';
 import Home from './Home';
 import About from './About';
 import Congrats from './Congrats';
+import FeaturesSection from './Features';
 
 function App() {
   return (
@@ -14,12 +15,14 @@ function App() {
       <Navbar />
       <div className='routes'>
         <Routes>
-          <Route path="/" element={<CreateBlog />} />
+          <Route path="/create" element={<CreateBlog />} />
           <Route path="/congrats" element={<Congrats />} />
           <Route path="/create" element={<CreateBlog />} />
           <Route path="/login-sign" element={<Login />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path='/about' element={<About/>}/>
+          <Route path='/features' element={<FeaturesSection/>}/>
+
         </Routes>
       </div>
       <Footer />

@@ -6,15 +6,13 @@ const About = () => {
       <div className="about-hero">
             <div className="about-text">
           <h1>About Us</h1>
-          <p> Welcome to Bits & Blogs — a sanctuary where artists turn emotions into words and visuals.
-            Our mission is to empower creators to share not only their artworks, but also the stories, thoughts, and feelings behind them.</p>
+          <p> Welcome to Bits & Blogs — a sanctuary where artists turn emotions into words and visuals.Our mission is to empower creators to share not only their artworks, but also the stories, thoughts, and feelings behind them.</p>
         </div>
         <img src="https://i.pinimg.com/736x/22/82/27/228227ce2616ed16ab3428ff022247ec.jpg" alt="Artistic representation"/>
       </div>
 
       <div className="about-section">
-        <img src="https://i.pinimg.com/736x/0c/76/eb/0c76eb5f920843d298a6412f8e57a610.jpg" alt="Artist working"/>
-        <div className="about-text">
+        <img src="https://i.pinimg.com/736x/0c/76/eb/0c76eb5f920843d298a6412f8e57a610.jpg" alt="Artist working"/>   <div className="about-text">
           <h2>More Than Just a Blog</h2>
           <p>This isn't your average blog platform. It's a personal gallery, a diary, a voice. Artists can reflect on their work, document their process, and connect on a deeper level with an audience that values authenticity. </p>
         </div>

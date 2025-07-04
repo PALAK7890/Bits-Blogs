@@ -5,7 +5,7 @@ export default function Congrats() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate('/'); // This goes back to CreateBlog ("/")
+    navigate('/create'); // This goes back to CreateBlog ("/")
   };
 
   return (

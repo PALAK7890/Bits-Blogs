@@ -1,17 +1,18 @@
 import React,{useEffect,useState} from 'react'
 import { reviews } from './ mockapi';
 import { useNavigate } from 'react-router-dom';
+import { featuredBlogs } from './ mockapi';
 export default function Home() {
-    const[blogs,setBlogs]=useState([])
+    // const[blogs,setBlogs]=useState([])
 
-    useEffect(()=>{
-        fetch("https://dummyjson.com/posts?limit=10")
-        .then(response => response.json())
-        .then(data=>setBlogs(data.posts))
-        .catch(error => console.error('Error fetching blogs:', error));
+    // useEffect(()=>{
+    //     fetch("https://dummyjson.com/posts?limit=10")
+    //     .then(response => response.json())
+    //     .then(data=>setBlogs(data.posts))
+    //     .catch(error => console.error('Error fetching blogs:', error));
     
 
-    },[])
+    // },[])
 
     const[review,setReview]=useState([])
 
@@ -35,9 +36,10 @@ export default function Home() {
             <div className='featured-blogs'>
                 <h3>Featured Blogs:)</h3>
                 <div className='featured-blogs-grid'>
-                    {blogs.map(blog=>(
+                    {featuredBlogs.map(blog=>(
                         <div key={blog.id}className='grid'>
                             <img src={blog.image} alt={blog.title} className='grid-image'></img>
+                            <h4>{blog.title}</h4>
                             <p>{blog.description}</p>
                         </div>
                     ))}
