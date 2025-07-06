@@ -14,7 +14,7 @@ const Navbar = () => {
             <li><button onClick={()=>navigate('/')} className='nbutton'>Home</button></li>
             <li><button onClick={()=>navigate('/about')} className='nbutton'>About</button></li>
             <li><button onClick={()=>navigate('/features')} className='nbutton'>Features</button></li>
-            <li><button onClick={()=>navigate('/home')} className='nbutton'>Blogs</button></li>
+            <li><button onClick={()=>navigate('/blog')} className='nbutton'>Blogs</button></li>
             
         </ul>
         <div className='search-box'>

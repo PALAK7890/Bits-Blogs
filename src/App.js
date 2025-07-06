@@ -8,6 +8,7 @@ import Home from './Home';
 import About from './About';
 import Congrats from './Congrats';
 import FeaturesSection from './Features';
+import BlogPage from './Blog';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path='/about' element={<About/>}/>
           <Route path='/features' element={<FeaturesSection/>}/>
+          <Route path='/blog' element ={<BlogPage/>}/>
 
         </Routes>
       </div>
